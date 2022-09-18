@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<!-- written by chapel1337 -->
+<!-- made on 9/17/2022 -->
+<!-- images made by ROMAHKAO -->
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+    <script defer src = "script.js"></script>
+    <link rel = "stylesheet" href = "image-style.css">
+</head>
+
+<body>
+
+    <script>
+
+        let localCameFrom = localStorage.getItem("cameFrom");
+        let localTitles = JSON.parse(localStorage.getItem("titles"));
+        let localDates = JSON.parse(localStorage.getItem("dates"));
+        let localAuthors = JSON.parse(localStorage.getItem("authors"));
+
+        window.onload = function()
+        {
+            document.getElementById("image").src = "images/" + localCameFrom + ".png";
+            document.getElementById("title").innerHTML = localTitles[localCameFrom];
+
+            document.getElementById("date").innerHTML = localDates[localCameFrom];
+            document.getElementById("author").innerHTML = localAuthors[localCameFrom];
+
+            document.title = localTitles[localCameFrom];
+        }
+
+    </script>
+
+    <img id = "image">
+    <h1 id = "title"> a </h1>
+
+    <p id = "date"></p>
+    <p id = "author"></p>
+
+</body>
+</html>

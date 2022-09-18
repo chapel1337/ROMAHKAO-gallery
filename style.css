@@ -1,0 +1,59 @@
+/* written by chapel1337 */
+/* made on 9/17/2022 */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scrollbar-width: 0.5px;
+}
+
+body {
+    background-color: rgb(32, 46, 37);
+}
+
+#gallery-container {
+    height: 100%;
+    width: 100%;
+}
+
+.image-container {
+    height: 250px;
+    width: 250px;
+
+    background-color: black;
+
+    border: 1px solid black;
+    border-radius: 2.5%;
+    box-shadow: 2px 2px 2px;
+    transition-duration: 0.75s;
+
+    display: inline-block;
+    margin-left: 12%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.image-container p {
+    position: relative;
+    text-align: center;
+    opacity: 0%;
+    color: white;
+}
+
+img {
+    z-index: 1;
+    transition-duration: 0.75s;
+}
+
+.image-container:hover {
+    width: 275px;
+    height: 275px;
+}
+
+.image-container:hover p {
+    opacity: 100%;
+}
+
+img:hover {
+    width: 275px;
+    height: 275px;
+}

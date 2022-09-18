@@ -1,0 +1,52 @@
+/* written by chapel1337 */
+/* made on 9/17/2022 */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: rgb(32, 46, 37);
+}
+
+#image {
+    height: 550px;
+    width: 550px;
+
+    position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: black;
+
+    border: 2px solid black;
+    border-radius: 2.5%;
+}
+
+#title {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 30px;
+}
+
+#date {
+    position: absolute;
+    top: 1.5;
+    left: 4%;
+    transform: translate(-50%, -50%);
+
+    font-size: 15px;
+}
+
+#author {
+    position: absolute;
+    top: 1.5%;
+    right: -1.5%;
+    transform: translate(-50%, -50%);
+
+    font-size: 15px;
+}
